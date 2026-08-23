@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import { SiteHeader } from '@/components/site-header';
 import { getPublishedWriteups } from '@/lib/writeups';
 
@@ -15,12 +14,12 @@ export default function Home() {
             <li key={writeup.slug}>
               <time dateTime={writeup.date}>{writeup.date}</time>
               <div>
-                <Link
+                <a
                   className="writing-title"
                   href={`/writing/${writeup.slug}`}
                 >
                   {writeup.title}
-                </Link>
+                </a>
                 {writeup.summary ? <p>{writeup.summary}</p> : null}
               </div>
             </li>

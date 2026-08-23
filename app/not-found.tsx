@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import { SiteHeader } from '@/components/site-header';
 
 export default function NotFound() {
@@ -8,7 +7,7 @@ export default function NotFound() {
       <main className="simple-page">
         <h1>Not found</h1>
         <p>
-          <Link href="/">Return to the writing index.</Link>
+          <a href="/">Return to the writing index.</a>
         </p>
       </main>
     </div>

@@ -5,7 +5,20 @@ import nextTs from 'eslint-config-next/typescript';
 const eslintConfig = defineConfig([
   ...nextVitals,
   ...nextTs,
-  globalIgnores(['.next/**', 'out/**', 'build/**', 'next-env.d.ts']),
+  {
+    // Vinext's client router does not navigate correctly in the static export,
+    // so internal links intentionally use native document navigation.
+    rules: {
+      '@next/next/no-html-link-for-pages': 'off',
+    },
+  },
+  globalIgnores([
+    '.next/**',
+    'out/**',
+    'build/**',
+    'dist/**',
+    'next-env.d.ts',
+  ]),
 ]);
 
 export default eslintConfig;
