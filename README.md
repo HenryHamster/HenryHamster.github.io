@@ -11,27 +11,6 @@ pnpm dev
 
 ## Add a writeup
 
-### Write on the website
-
-Open `/edit` (or choose **Edit** in the navigation). Unlock with a fine-grained
-GitHub personal access token owned by `HenryHamster`, restricted to this repository,
-with **Contents: read and write**. The token goes directly to GitHub and is kept
-only in page memory, never in local storage or the repository. Reloading or locking
-requires unlocking again. GitHub enforces repository write permissions; the UI also
-checks the authenticated owner. The editor's URL and code are public, not a secret.
-
-Write a title, summary, and body on the page. Preview supports basic Markdown.
-Drafts autosave to this browser's local storage, including across reloads; they are
-not synced or backed up remotely. Use **Download draft** for a portable copy.
-Only one local draft is kept. New/open operations ask before replacing it.
-**Publish** commits a Markdown file to the default branch and triggers the existing
-Pages deployment. A successful commit is reported separately from deployment.
-**Open a post** loads an existing file; updates include its SHA so concurrent changes
-cause a conflict instead of being overwritten. Existing metadata, including links,
-is preserved. Never put a token in post content or commit one to this repository.
-
-### Write locally
-
 Create a dated Markdown file with the standard research-writeup outline:
 
 ```bash
