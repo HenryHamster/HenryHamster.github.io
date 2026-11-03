@@ -11,7 +11,7 @@ export default function AboutPage() {
       <SiteHeader />
       <main className="simple-page">
         <h1>About</h1>
-        <p>TBD</p>
+        <p><a href="/writing/intro">Intro &amp; Motivations</a></p>
       </main>
     </div>
   );
